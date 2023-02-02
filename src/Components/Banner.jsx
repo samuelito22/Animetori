@@ -1,5 +1,5 @@
 import React from 'react'
-import {Dazai, SearchBar} from './index'
+import {Dazai, SearchBar} from '../index'
 
 
 const Banner = () => {
@@ -10,7 +10,7 @@ const Banner = () => {
                 <h2>Discover, Analyse and Discuss the anime that intrest you</h2>
                 <SearchBar/>
             </div>
-            <div className='banner-container-img'><img src={Dazai}/></div>
+            <div className='banner-container-img'><img src={Dazai} alt="..."/></div>
             
         </div>    
     </div>

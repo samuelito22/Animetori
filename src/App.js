@@ -1,6 +1,6 @@
 import React, { useEffect, useState} from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home, Navbar } from './Components/index.js';
+import { HomePage, Navbar, AnimePage, Footer } from './index.js';
 
 
 const App = () => {
@@ -43,8 +43,10 @@ const App = () => {
     <BrowserRouter>
     <Navbar/>
     <Routes>
-        <Route path='/' element={<Home data={data}/>}/>
+        <Route path='/' element={<HomePage data={data}/>}/>
+        <Route path='/anime' element={<AnimePage data={data}/>}/>
     </Routes>
+    <Footer/>
     </BrowserRouter>
   )
 }

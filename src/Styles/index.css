@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+:root{
+    --dark: #141212;
+    --light: #F6F6F6;
+    --beige: #E8DED1;
+    --warning: #ffc107;
+}
+.bg-dark{
+    background-color: var(--dark);
+}
+.bg-light{
+    background-color: var(--light);
+}
+.bg-white{
+    background-color: white;
+}
+.text-light{
+    color: white;
+}
+.text-dark{
+    color: black;
+}
+.btn-dark{
+    background-color: var(--dark);
+    border: 2px solid transparent;
+    padding: 5px 22px;
+    border-radius: 12px;
+    transition: 0.4s;
+    color: white;
+    text-align: center;
+}
+.btn-dark:hover{
+    border: 2px solid var(--dark);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.btn-light{
+    background-color: var(--light);
+    border: 2px solid transparent;
+    padding: 5px 22px;
+    border-radius: 12px;
+    transition: 0.4s;
+    color: black;
+    text-align: center;
+}
+.btn-light:hover{
+    border: 2px solid var(--light);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+html,
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.container{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px 2%;
+}
+
+@media screen and (min-width: 1300px) {    
+    .banner-container{
+        width: 70%;
+    }
+    .banner-descriptionBox{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .banner-container-img, #competitionImage{
+        display: none;
+    }
+    
+    .banner-container{
+        width: 70%;
+    }
+    .banner-descriptionBox{
+        width: 100%;
+    }
+}
+/* Navbar */
+.navbar{
+    width: 100vw;
+    border-bottom: #141212 0.5px solid;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    max-height: 60px;
+}
+.navbar-menu li{
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    padding-right: 20px;
+}
+.navbar-container{
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+}
+
+/* SearchBar */
+.searchbar{
+    width: 80%;
+    padding: 8px 3%;
+    height: 15px;
+    border-radius: 15px;
+    margin-top: 5px;
+    border: 2px solid black;
+}
+
+
